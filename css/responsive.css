@@ -1,0 +1,87 @@
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 0.8rem;
+  }
+  header .container-fluid {
+    background: #272727;
+  }
+  .navbar {
+    width: 100%;
+  }
+  .navbar-brand {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 0;
+  }
+  .nav-item {
+    margin: 0.5em 0;
+  }
+  .buttons {
+    flex-direction: column;
+  }
+  .section-2 .about-us {
+    width: 95%;
+  }
+  .section-2 .panel-about {
+    position: initial;
+    background: #fff;
+    padding: 1em 0 2em;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+  .section-2 .aim-about {
+    position: initial;
+    background: #fff;
+    padding: 1em 0;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+  .section-3 .programmes {
+    width: 100%;
+  }
+  footer .container {
+    padding: 8em 0;
+  }
+  footer .quick-links {
+    padding: 1.2em;
+  }
+  footer .contact-us {
+    padding-left: 1.2em;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  header .container-fluid {
+    background: #272727;
+  }
+  .navbar {
+    width: 95%;
+  }
+  .nav-item {
+    margin: 0.5em 0;
+  }
+  .section-2 .about-us {
+    width: 95%;
+  }
+  .section-2 .panel-about {
+    position: initial;
+    background: #fff;
+    padding: 1em 0 2em;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+  .section-2 .aim-about {
+    position: initial;
+    background: #fff;
+    padding: 1em 0;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+  .section-3 .programmes {
+    width: 100%;
+  }
+  footer .container {
+    padding: 8em 0;
+  }
+  footer .quick-links {
+    padding-left: 1.2em;
+  }
+  footer .contact-us {
+    padding-left: 1.2em;
+  }
+}
