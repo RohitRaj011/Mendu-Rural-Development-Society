@@ -47,7 +47,7 @@
     padding-left: 1.2em;
   }
 }
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 480px) and (max-width: 991px) {
   header .container-fluid {
     background: #272727;
   }

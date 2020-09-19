@@ -84,19 +84,6 @@ p {
 .navbar-brand:hover {
   color: #63bb30;
 }
-.dropdown-item {
-  font-size: 0.8rem;
-  margin: 0;
-}
-.dropdown:hover .dropdown-menu {
-  display: block;
-  margin-top: 0;
-  color: #fff;
-}
-.dropdown-item:hover {
-  background-color: #63bb30;
-  color: #fff;
-}
 .container-fluid.sticky {
   position: fixed;
   top: 0;
@@ -181,14 +168,18 @@ p {
 .section-1 .cause {
   background: #f9fafc;
   transition: all 0.3s;
-  padding: 3em;
+  padding: 3em 2em;
   margin: 1em 0;
+  border: none;
 }
 .section-1 .cause:hover {
   box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
 }
-.section-1 .cause img {
+.section-1 .cause figure {
   padding: 2.5em;
+}
+.section-1 .cause figure img {
+  height: 6em;
 }
 
 /* SECTION-2 */
