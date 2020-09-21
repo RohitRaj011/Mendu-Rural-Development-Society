@@ -9,9 +9,8 @@
     width: 100%;
   }
   .navbar-brand {
-    font-size: 1.05rem;
+    font-size: 1rem;
     font-weight: 600;
-    margin: 0;
   }
   .nav-item {
     margin: 0.5em 0;
@@ -19,19 +18,18 @@
   .buttons {
     flex-direction: column;
   }
-  .section-2 .about-us {
-    width: 95%;
+  .about-page-section-2 {
+    padding: 15em 0;
   }
   .section-2 .panel-about {
-    position: initial;
-    background: #fff;
-    padding: 1em 0 2em;
+    padding: 6em 1em;
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
   }
   .section-2 .aim-about {
     position: initial;
     background: #fff;
-    padding: 1em 0;
+    padding: 6em 1em;
+    /* padding: 8em 2em 6em; */
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
   }
   .section-3 .programmes {
@@ -40,14 +38,14 @@
   footer .container {
     padding: 8em 0;
   }
-  footer .quick-links {
-    padding: 1.2em;
+  footer .col-md-6 {
+    padding: 1em;
   }
-  footer .contact-us {
-    padding-left: 1.2em;
+  footer .links li {
+    padding: 0.8em 0;
   }
 }
-@media (min-width: 480px) and (max-width: 991px) {
+@media (min-width: 481px) and (max-width: 991px) {
   header .container-fluid {
     background: #272727;
   }
@@ -57,19 +55,17 @@
   .nav-item {
     margin: 0.5em 0;
   }
-  .section-2 .about-us {
-    width: 95%;
+  .about-page-section-2 {
+    padding: 15em 0;
   }
   .section-2 .panel-about {
-    position: initial;
-    background: #fff;
-    padding: 1em 0 2em;
+    padding: 6em 1em;
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
   }
   .section-2 .aim-about {
     position: initial;
     background: #fff;
-    padding: 1em 0;
+    padding: 6em 1em;
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
   }
   .section-3 .programmes {
@@ -78,10 +74,21 @@
   footer .container {
     padding: 8em 0;
   }
-  footer .quick-links {
-    padding-left: 1.2em;
+  footer .col-md-6 {
+    padding: 1em;
   }
-  footer .contact-us {
-    padding-left: 1.2em;
+  footer .links li {
+    padding: 0.8em 0;
+  }
+}
+@media (min-width: 992px) and (max-width: 1024px) {
+  header .container-fluid {
+    background: #272727;
+  }
+  .navbar {
+    width: 95%;
+  }
+  .nav-item {
+    margin: 0.8em 0;
   }
 }
