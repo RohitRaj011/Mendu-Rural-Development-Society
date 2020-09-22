@@ -18,6 +18,9 @@
   .buttons {
     flex-direction: column;
   }
+  .learning .container-fluid {
+    width: 100%;
+  }
   .about-page-section-2 {
     padding: 15em 0;
   }
@@ -55,6 +58,9 @@
   .nav-item {
     margin: 0.5em 0;
   }
+  .learning .container-fluid {
+    width: 100%;
+  }
   .about-page-section-2 {
     padding: 15em 0;
   }
@@ -81,7 +87,7 @@
     padding: 0.8em 0;
   }
 }
-@media (min-width: 992px) and (max-width: 1024px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   header .container-fluid {
     background: #272727;
   }
@@ -90,5 +96,8 @@
   }
   .nav-item {
     margin: 0.8em 0;
+  }
+  .learning .container-fluid {
+    width: 100%;
   }
 }

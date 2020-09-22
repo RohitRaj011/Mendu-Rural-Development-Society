@@ -1,11 +1,17 @@
-window.addEventListener("scroll", function () {
-  var navbar = document.getElementsByClassName("container-fluid")[0];
-  navbar.classList.toggle("sticky", window.scrollY > 0);
-});
+function scrolling() {
+  window.addEventListener("scroll", function () {
+    var navbar = document.getElementsByClassName("container-fluid")[0];
+    navbar.classList.toggle("sticky", window.scrollY > 0);
+  });
+}
 
 $(document).ready(function () {
+  var x = window.matchMedia("(min-width: 1200px)");
+  if (x.matches) scrolling();
+
   var page_url = window.location.href;
   var page_id = page_url.substring(page_url.lastIndexOf("#") + 1);
+
   if (page_id == "programme") {
     $("html, body").animate(
       {

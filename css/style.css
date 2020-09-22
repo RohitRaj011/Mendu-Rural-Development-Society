@@ -53,6 +53,7 @@ p {
   max-width: 1200px;
   margin: 0 auto;
   padding: 1em 0;
+  transition: all 0.5s ease-in;
 }
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -109,7 +110,6 @@ p {
   padding: 0.8em;
   color: #fff;
 }
-
 .row .col-lg-12 .first-text {
   font-size: 3rem;
   font-weight: 500;
@@ -120,44 +120,44 @@ p {
   font-weight: 650;
 }
 
-/* BUTTONS */
+/* BUTTONS BANNER */
 .buttons {
   display: flex;
   justify-content: center;
   width: 40%;
   margin: auto;
 }
-.buttons button {
+.buttons a {
   border-radius: 1px;
   transition: 0.5s;
   margin: 0.2em;
-  padding: 0.5em;
   flex: 1;
 }
-.buttons .btn a {
+.buttons .btn span {
   color: #fff;
   text-decoration: none;
   font-size: 0.8rem;
+  width: 100%;
 }
 .buttons .btn-donate {
   background-color: #63bb30;
   border: 3px solid #63bb30;
 }
-.buttons .btn-cause {
+.buttons .btn-prog {
   background-color: #fcb82f;
   border: 3px solid #fcb82f;
 }
 .buttons .btn:hover {
   background-color: rgba(255, 255, 255, 0);
 }
-.buttons .btn-donate:hover a {
+.buttons .btn-donate:hover span {
   color: #63bb30;
 }
-.buttons .btn-cause:hover a {
+.buttons .btn-prog:hover span {
   color: #fcb82f;
 }
 
-/* SECTION-1 */
+/* SECTION-1 MAJOR CAUSES */
 .section-1 {
   width: 90%;
   max-width: 1200px;
@@ -183,7 +183,7 @@ p {
   height: 6em;
 }
 
-/* SECTION-2 */
+/* SECTION-2 ABOUT */
 .section-2 {
   padding-bottom: 20em;
 }
@@ -215,7 +215,7 @@ p {
   padding-bottom: 1em;
   color: #63bb30;
 }
-.section-2 .btn-learn {
+/* .section-2 .btn-learn {
   border-radius: 1px;
   transition: 0.5s;
   margin: 1em 0;
@@ -236,9 +236,9 @@ p {
 }
 .section-2 .btn-learn:hover a {
   color: #63bb30;
-}
+} */
 
-/* SECTION-3 */
+/* SECTION-3 PROGRAMMES */
 .section-3 {
   margin-bottom: 8em;
 }
@@ -278,7 +278,7 @@ p {
   transform: scale(1.2);
 }
 
-/* SECTION-4 */
+/* SECTION-4 VOLUNTEER */
 .section-4 {
   background-color: #f9fafc;
 }
@@ -327,9 +327,26 @@ p {
 }
 
 /* LEARNING - PAGE */
-.learning .container {
-  max-width: 1200px;
+.page-header-learning {
+  background: linear-gradient(rgba(3, 1, 10, 0.5), rgba(3, 1, 10, 0.5)),
+    url("../images/learning4.jpeg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+.learning-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+}
+.learning .container-fluid {
   width: 95%;
+  margin: 10em auto;
+}
+.learning .container-fluid .row .col-md-6 {
+  margin: 2em auto;
 }
 
 /* CONTACT - PAGE */
