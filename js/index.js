@@ -26,5 +26,18 @@ $(document).ready(function () {
       },
       800
     );
+  } else if (page_id == "contact") {
+    $("html, body").animate(
+      {
+        scrollTop: $("#scroll-" + page_id).offset().top - 200,
+      },
+      800
+    );
   }
+
+  $(".carousel").carousel({
+    interval: 5000,
+    keyboard: false,
+    pause: "hover",
+  });
 });
