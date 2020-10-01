@@ -15,7 +15,7 @@ $(document).ready(function () {
   if (page_id == "programme") {
     $("html, body").animate(
       {
-        scrollTop: $("#scroll-" + page_id).offset().top - 200,
+        scrollTop: $("#scroll-" + page_id).offset().top - 180,
       },
       800
     );
@@ -29,7 +29,7 @@ $(document).ready(function () {
   } else if (page_id == "contact") {
     $("html, body").animate(
       {
-        scrollTop: $("#scroll-" + page_id).offset().top - 200,
+        scrollTop: $("#scroll-" + page_id).offset().top - 180,
       },
       800
     );
