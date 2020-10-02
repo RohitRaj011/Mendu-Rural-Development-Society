@@ -33,6 +33,13 @@ $(document).ready(function () {
       },
       800
     );
+  } else if (page_id == "donate") {
+    $("html, body").animate(
+      {
+        scrollTop: $("#scroll-" + page_id).offset().top - 300,
+      },
+      800
+    );
   }
 
   $(".carousel").carousel({

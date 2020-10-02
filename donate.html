@@ -86,13 +86,50 @@
     </header>
 
     <main>
-      <section>
-        <nav class="nav nav-pills nav-fill">
-          <a class="nav-item nav-link active" href="#">Active</a>
-          <a class="nav-item nav-link" href="#">Link</a>
-          <a class="nav-item nav-link" href="#">Link</a>
-          <a class="nav-item nav-link disabled" href="#">Disabled</a>
-        </nav>
+      <section class="donation" id="scroll-donate">
+        <div class="container">
+          <!-- TABS ALT -->
+          <div class="row tabs text-center">
+            <div data-tab-target="#upi" class="col-5 mx-auto active-tab tab">
+              <i class="far fa-credit-card"></i>
+            </div>
+            <div class="col-5 tab mx-auto" data-tab-target="#bank">
+              <i class="fas fa-university"></i>
+            </div>
+          </div>
+
+          <!-- Tab content -->
+          <div class="tab-content">
+            <!-- UPI -->
+            <div id="upi" data-tab-content class="active-tab">
+              <div class="row">
+                <div class="col-lg-6 text-center" style="padding: 5em 0">
+                  <h2 class="active">Details</h2>
+                </div>
+                <div class="col-lg-6">
+                  <img src="images/code.jpg" alt="qr-code" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+            <!-- Bank -->
+            <div id="bank" data-tab-content>
+              <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                  <h2 class="text-center my-5 active">Bank Account Details</h2>
+                </div>
+                <div class="col-lg-6 mx-auto my-1">
+                  <p><strong class="active">Bank:&nbsp;</strong></p>
+                  <p><strong class="active">IFSC Code:&nbsp;</strong></p>
+                  <p>
+                    <strong class="active"
+                      >Account Number A/c No.:&nbsp;</strong
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -186,4 +223,22 @@
     </footer>
   </body>
   <script src="js/index.js"></script>
+  <script>
+    const tabs = document.querySelectorAll("[data-tab-target]");
+    const tabContents = document.querySelectorAll("[data-tab-content]");
+
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        const target = document.querySelector(tab.dataset.tabTarget);
+        tabContents.forEach((tabContent) => {
+          tabContent.classList.remove("active-tab");
+        });
+        tabs.forEach((tab) => {
+          tab.classList.remove("active-tab");
+        });
+        tab.classList.add("active-tab");
+        target.classList.add("active-tab");
+      });
+    });
+  </script>
 </html>

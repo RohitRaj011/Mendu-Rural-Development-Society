@@ -388,6 +388,36 @@ p {
   padding: 15px;
 }
 
+/* DONATION PAGE */
+.donation {
+  margin: 10em auto;
+}
+.donation [data-tab-content] {
+  display: none;
+}
+.donation .active-tab[data-tab-content] {
+  display: block;
+}
+.donation .tabs .tab {
+  cursor: pointer;
+  margin: 0 1em;
+  border: 5px solid white;
+}
+.donation .tabs .tab i {
+  font-size: 5em;
+  padding: 0.5em 0;
+}
+.donation .tabs .tab.active-tab {
+  color: #63bb30;
+  border: 5px solid #63bb30;
+}
+.donation .tabs .tab:hover {
+  color: #63bb30;
+}
+.donation .tab-content {
+  margin-top: 5em;
+}
+
 /* FOOTER */
 footer {
   background-color: #091b27;
