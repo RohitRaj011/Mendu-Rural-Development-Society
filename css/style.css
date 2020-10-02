@@ -211,28 +211,6 @@ p {
   padding-bottom: 1em;
   color: #63bb30;
 }
-/* .section-2 .btn-learn {
-  border-radius: 1px;
-  transition: 0.5s;
-  margin: 1em 0;
-  padding: 0.5em;
-  width: 40%;
-}
-.section-2 .btn-learn a {
-  color: #fff;
-  font-size: 0.9rem;
-  text-decoration: none;
-}
-.section-2 .btn-learn {
-  background-color: #63bb30;
-  border: 2px solid #63bb30;
-}
-.section-2 .btn-learn:hover {
-  background-color: rgba(255, 255, 255, 0);
-}
-.section-2 .btn-learn:hover a {
-  color: #63bb30;
-} */
 
 /* SECTION-3 PROGRAMMES */
 .section-3 {
@@ -423,9 +401,6 @@ footer h2,
 footer h4 {
   color: #fff;
 }
-/* footer .mission {
-  padding-right: 3em;
-} */
 footer .quick-links {
   padding-left: 3em;
 }
