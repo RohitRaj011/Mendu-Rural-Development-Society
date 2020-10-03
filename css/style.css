@@ -379,13 +379,17 @@ p {
 /* LATEST ACTIVITY PAGE */
 .activities {
   width: 95%;
-  margin: auto;
+  margin: 10em auto;
 }
 .activities .image,
 .activities .video {
   margin: 10em auto;
   border: 5px solid #63bb30;
   padding: 15px;
+}
+.slick-prev,
+.slick-next {
+  background: #f2b946;
 }
 
 /* DONATION PAGE */

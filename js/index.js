@@ -42,9 +42,28 @@ $(document).ready(function () {
     );
   }
 
-  $(".carousel").carousel({
-    interval: 5000,
-    keyboard: false,
-    pause: "hover",
+  $("#image-carousel").slick({
+    adaptiveHeight: true,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    dots: true,
+    arrows: false,
+  });
+
+  $("#video-carousel").slick({
+    adaptiveHeight: true,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    dots: true,
+    arrows: false,
+  });
+
+  $("#video-carousel").on("beforeChange", function () {
+    $(".videos").trigger("pause");
+  });
+  $("#video-carousel").on("afterChange", function () {
+    $(".slick-active .videos").trigger("play");
   });
 });
