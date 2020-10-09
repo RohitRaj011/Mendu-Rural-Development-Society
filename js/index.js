@@ -55,7 +55,7 @@ $(document).ready(function () {
     adaptiveHeight: true,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 10000,
     dots: true,
     arrows: false,
   });
